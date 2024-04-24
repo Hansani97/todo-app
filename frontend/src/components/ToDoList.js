@@ -54,7 +54,7 @@ const ToDoList = () => {
         Every task completed is a small victory. Keep going💪!
       </div>
 
-      <CreateTask modal={modal} toggle={toggle} />
+      <CreateTask modal={modal} toggle={toggle} getAllTodo={getAllTodo}/>
     </>
   );
 };
