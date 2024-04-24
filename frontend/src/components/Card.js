@@ -43,12 +43,7 @@ const Card = ({ taskObj, index, getAllTodo }) => {
   };
 
   const handleDelete = (id) => {
-    axios
-      .delete("http://localhost:5000/delete" + id)
-      .then((result) => console.log(result))
-      .catch.catch((err) => console.log(err));
-    getAllTodo();
-    setModal(false);
+   axios.delete("http://localhost:5000/delete" + id);
   };
   const handleDoneChange = () => {
     setIsDone(!isDone);
