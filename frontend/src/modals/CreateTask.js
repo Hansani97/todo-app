@@ -34,7 +34,6 @@ const CreateTask = ({ modal, toggle , getAllTodo}) => {
                 className="form-control"
                 placeholder="Task here (max 25 characters)"
                 onChange={(e) => setTitle(e.target.value)}
-                name="taskName"
               ></input>
             </div>
             <br />
