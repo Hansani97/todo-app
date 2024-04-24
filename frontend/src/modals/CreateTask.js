@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 import { getAllTodo } from "../utils/HandleApi";
 
-const CreateTask = ({ modal, toggle }) => {
+const CreateTask = ({ modal, toggle , getAllTodo}) => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
 
